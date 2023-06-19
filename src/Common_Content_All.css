@@ -1,0 +1,146 @@
+.JSPL_LOGO {
+    position: absolute;
+    width: 7%;
+    height: 7%;
+    padding: 0 0 0  0.5%;
+    background-color: white;
+}
+
+.Heading_line_div {
+    background-color: white;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.Heading_line {
+    color: red;
+    margin: 0px 0px 0px 0px;
+}
+
+.Top_Title {
+    background-color: white;
+
+}
+.Display_Name_Span {
+    position: absolute;
+    color: rgb(0, 0, 0);
+    top: 1.5%;
+    left: 67%;
+    border: none;
+    outline: none;
+    width: auto;
+    border-bottom: 2px solid #b6a0ee;
+}
+
+.icon-button {
+    position: absolute;
+    background-color: rgb(102, 93, 93);
+    color: white;
+    top: 1.5%;
+    left: 92%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:none;
+    outline:none;
+}
+.icon-button:hover{
+    color: black;
+    background: transparent;
+}
+
+.icon {
+    margin-right: 1px;
+    margin-left: 8px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.text {
+    margin-left: 1px;
+    margin-right: 6px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+.Nav_Bar_div{
+    background: rgb(100, 175, 245);
+    width: 100%;
+    height: 50px;
+    
+}
+.Dashboard_btn{
+    height: 50px;
+    padding-left: 1%;
+    padding-right: 2%;
+    color: white;
+    background-color: rgb(100, 175, 245);
+    border:none;
+    outline:none;
+}
+.Dashboard_btn:hover{
+    background: red;
+    border:none;
+    outline:none;
+}
+.Dashboard_btn:focus{
+    background: red;
+    color: white;
+    border:none;
+    outline:none;
+}
+.Report_btn{
+    height: 50px;
+    padding-left: 2%;
+    padding-right: 3%;
+    color: white;
+    background-color: rgb(100, 175, 245);
+    border:none;
+    outline:none;
+}
+.Report_btn:hover{
+    background: red;
+    border:none;
+    outline:none;
+}
+.Report_btn:focus{
+    background: red;
+    color: white;
+    border:none;
+    outline:none;
+}
+.Nav_bar_dropDown{
+    height: 50px;
+    padding-top: 0.88%;
+    padding-left: 1%;
+    padding-right: 1%;
+    background-color: rgb(100, 175, 245);
+    color: white;
+    border:none;
+    outline:none;
+    text-align: center;
+    text-size-adjust: 2px;
+    text-transform: capitalize;
+    font-weight: bold;
+    text-size-adjust: 50px 100px;
+
+
+}
+.Nav_bar_dropDown:hover{
+    background: red;
+    border:none;
+    outline:none;
+
+}
+.Nav_bar_dropDown:focus{
+    background: red;
+    color: white;
+    border:none;
+    outline:none;
+}
+
+
+.NavDropdown.Item:focus, .NavDropdown.Item:hover {
+    color: var(--bs-dropdown-link-hover-color);
+    background: blue;
+}

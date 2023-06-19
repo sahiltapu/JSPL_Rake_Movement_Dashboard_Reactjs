@@ -1,0 +1,388 @@
+.Eye_Button {
+    color: white;
+    background: rgb(92, 1, 177);
+    border: 0.3px solid black;
+}
+
+.Eye_Button:hover {
+    opacity: 0.6;
+}
+
+.Form_Button {
+    color: white;
+    background: rgb(52, 151, 238);
+    border: 0.3px solid black;
+
+}
+
+.Form_Button:hover {
+    opacity: 0.6;
+}
+
+.tableRow:nth-child(odd) {
+    background-color: #f2f1f1
+}
+
+.Rake_In_ID_Popup {
+    width: 99%;
+    background: #C4DFDF;
+    border:none;
+    height: 25px;
+}
+
+.Rake_In_ID_Popup:hover{
+        
+    cursor: not-allowed;
+        
+    outline: none;
+}
+.Rake_In_ID_Popup:focus{
+        
+    outline: none;
+
+}
+
+.Select_Rake_In_Name_Popup_Dropdown {
+    width: 60%;
+    height: 25px;
+
+}
+
+.Select_Rake_In_Name_Popup_Dropdown:hover {
+    cursor: pointer;
+
+}
+
+.Rake_In_Catagory_popup {
+    width: 60%;
+    height: 25px;
+}
+
+.Rake_Catagory_popup:hover {
+    cursor: pointer;
+    height: 25px;
+
+}
+
+.Rake_In_Originating_Station_Popup {
+    width: 99%;
+    background: white;
+    border:none;
+    height: 25px;
+
+}
+
+.Rake_In_Indent_No {
+    width: 150px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+.Rake_In_Indent_No:focus {
+    outline: none;
+        
+    width: 150px;
+
+}
+
+.Rake_In_Indent_Date {
+    width: 100%;
+    margin-left: 53px;
+    height: 25px;
+}
+
+.Rake_In_Wagon_Type_popup {
+    margin-right: 60px;
+    width: 150px;
+    height: 25px;
+
+}
+
+.Rake_In_Loco_No_Popup {
+    width: 170px;
+    height: 25px;
+
+}
+
+.Rake_in_Wagons_loaded_Popup {
+    margin-right: 60px;
+    width: 150px;
+    height: 25px;
+
+}
+
+.Rake_in_Wagons_loaded_desc_Popup {
+    width: 170px;
+    height: 25px;
+}
+
+.Rake_In_Total_Wagons_Popup {
+    width: 115px;
+    margin-right: 15px;
+    height: 25px;
+}
+
+.Rake_In_Wagons_loaded_Popup {
+    width: 115px;
+    margin-right: 15px;
+    height: 25px;
+}
+
+.Rake_In_Wagons_empty_Popup {
+    width: 115px;
+    height: 25px;
+}
+
+.Rake_In_Wagons_empty_Popup:hover {
+    cursor: not-allowed;
+    height: 25px;
+}
+
+.Service_station_Time_Popup {
+    width: 150px;
+    height: 25px;
+}
+
+.Service_station_Time_Popup {
+    width: 160px;
+    height: 25px;
+}
+
+.delay_Time_Popup {
+    width: 160px;
+    margin-right: 60px;
+    height: 25px;
+
+}
+
+.Service_station_Popup_Dropdown {
+    width: 160px;
+    margin-right: 60px;
+    height: 25px;
+
+}
+
+.Reason_delay_Popup_Dropdown {
+    width: 160px;
+    height: 25px;
+
+}
+
+.Serving_Station_Departure_Popup {
+    width: 160px;
+    height: 25px;
+}
+
+.Sliding_time_Popup {
+    width: 90px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+.Line_No_Sliding_Arrival_Popup {
+    width: 60px;
+    height: 25px;
+}
+
+.Railway_Palcement_time_Popup {
+    width: 160px;
+    height: 25px;
+}
+
+.Uploding_Start_time_Popup {
+    width: 230px;
+    margin-right: 100px;
+    height: 25px;
+
+}
+
+.Reason_delay_Uploading_Popup_Dropdown {
+    width: 160px;
+    height: 25px;
+
+}
+
+.Rake_Formation_Line_No_Popup {
+    width: 60%;
+    height: 25px;
+
+}
+
+.Eot_Popup {
+    width: 160px;
+    margin-right: 60px;
+    height: 25px;
+
+}
+
+.Ap_Ready_Popup {
+    width: 60%;
+    height: 25px;
+}
+
+.Defficiency_In_wagon_Parts_Popup {
+    width: 60%;
+    height: 25px;
+}
+
+.Attached_Wagons_Popup {
+    width: 160px;
+    margin-right: 60px;
+    height: 25px;
+
+}
+
+.Line_Clear_Time_Popup {
+    width: 160px;
+    margin-right: 60px;
+    height: 25px;
+
+}
+
+.To_Sataion_Popup {
+    width: 160px;
+    height: 25px;
+}
+
+.Slideng_Departure_Time_Popup {
+    width: 115px;
+    margin-right: 15px;
+    height: 25px;
+}
+
+.Sliding_Departure_Delay_Reason_Popup {
+    height: 25px;
+    width: 115px;
+}
+
+.Sliding_Departure_Delay_Reason_Popup:focus {
+    outline: none;
+        
+}
+
+.To_Station_Departure_Popup {
+    width: 115px;
+    margin-right: 15px;
+    height: 25px;
+
+}
+
+.Serving_Sation_Arrival_time_Popup {
+    width: 160px;
+    height: 25px;
+
+}
+
+.Serving_Sation_Arrival_time_Popup:focus {
+      
+    outline: none;
+}
+
+.JSPL_LOGO_POPUP {
+    height: 45px;
+    width: 120px;
+    padding-left: 5px;
+    background: #f2f1f1;
+
+
+}
+
+.Sliding_Arrival_Drop_Down_Popup {
+    height: 25px;
+    width: 90px;
+    margin-right: 5px;
+}
+
+.Sliding_Arrival_Drop_Down_Popup:focus {
+    outline: none;
+        
+}
+
+.At_Sliding_Arrival_Drop_Down_Popup {
+    height: 25px;
+    width:90px;
+    margin-right: 5px;
+}
+
+.Uploding_Completion_time_Popup {
+    width: 160px;
+    margin-right: 60px;
+    height: 25px;
+}
+
+.Rake_In_Commodity_desc_Popup {
+    height: 25px;
+    width: 115px;
+}
+
+.Rake_In_Sub_Commodity_popup {
+    width: 115px;
+    margin-right: 15px;
+    height: 25px;
+}
+
+.Rake_In_Originating_Station_Popup:focus,
+.Slideng_Departure_Time_Popup:focus,
+.Serving_Sation_Arrival_time_Popup:focus,
+.Line_Clear_Time_Popup:focus,
+.To_Sataion_Popup:focus,
+.Sliding_time_Popup:focus,
+.At_Sliding_Arrival_Drop_Down_Popup:focus ,
+.Line_No_Sliding_Arrival_Popup:focus,
+.Rake_In_Catagory_popup:focus{
+    outline: none;
+}
+.Line_No_Sliding_Arrival_Popup{
+    width:90px;
+    height:25px;
+}
+
+.To_Station_Departure_Popup:focus {
+    outline: none;
+        
+
+
+}
+.Rake_In_Commodity_popup{
+    width: 115px;
+    margin-right: 15px;
+    height: 25px;
+}
+.Select_Rake_out_Name_Popup_Dropdown{
+    width: 60%;
+    height: 25px;
+
+}
+.Select_Rake_out_Name_Popup_Dropdown:hover{
+    cursor: pointer;
+}
+
+.Select_Rake_out_Name_Popup_Dropdown:focus{
+     
+    outline: none;
+}
+.Rake_Out_ID_Popup{
+    width: 99%;
+    background: #C4DFDF;
+    border:none;
+    height: 25px;
+
+}
+.Rake_Out_ID_Popup:hover{
+        
+    cursor: not-allowed;
+
+}
+.Rake_Out_ID_Popup:focus{
+    outline: none;
+     
+}
+.Rake_Out_Empty_Type_Popup{
+    width: 60%;
+    height: 25px;
+
+}
+.Rake_Out_Empty_Type_Popup:focus{
+    outline:none;
+    
+}

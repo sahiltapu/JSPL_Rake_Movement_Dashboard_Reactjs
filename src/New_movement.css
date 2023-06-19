@@ -1,0 +1,47 @@
+.Outer_div{
+    width: 100%;
+    height: 70px;
+    background: white;
+    padding-top:0.4%;
+   
+}
+.inner_div{
+    width: 98%;
+    height:50px;
+    margin-left: 1%;
+    
+
+    background: #0073b7;
+
+}
+.New-movement-button {
+    position: absolute;
+    background-color: rgb(213, 162, 22);
+    color: white;
+    top: 19.5%;
+    left: 87%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:none;
+    outline:none;
+}
+.New-movement-button:hover{
+    color: white;
+    background: rgb(161, 111, 2);
+}
+
+.icon-plus {
+    margin-right: 1px;
+    margin-left: 8px;
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+
+.text-new {
+    margin-left: 1px;
+    margin-right: 6px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}

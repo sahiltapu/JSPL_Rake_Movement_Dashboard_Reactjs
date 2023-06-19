@@ -1,0 +1,444 @@
+.right_table_popup {
+    position: absolute;
+    top: 56px;
+    left: 570px;
+}
+.Left_table_popup{
+    margin-bottom: 10px;
+}
+
+.Rake_Name_Dropdown_Popup_Form,
+.Loaded_Type_Popup_Form {
+    width: 99%;
+    border: none;
+    height: 25px;
+}
+
+.Rake_Name_Dropdown_Popup_Form:focus,
+.Rake_Id_Popup_Form:focus,
+.Loaded_Type_Popup_Form:focus,
+.Enter_Station_Popup_Form:focus,
+.Indent_No_Popup_Form:focus,
+.Indent_Date_Popup_Form:focus,
+.Commodity_Popup_Form:focus,
+.Sub_Commodity_Popup_Form:focus,
+.Community_Description_popup_Form:focus,
+.Wagon_Type_Form_Popup:focus,
+.Loco_No_Popup_Form:focus,
+.Total_Wahons_loaded_In_Originating_Sataion:focus,
+.Serving_Station_Arrival_Time_Popup_Form:focus,
+.No_Of_Wagons_Serving_Station_Arrival_Popup_Form:focus,
+.Wagon_Description_Popup_Form:focus,
+.Line_clear_Popup_Form:focus,
+.For_Siding_Popup_Form:focus,
+.Line_No_Popup_Form:focus,
+.Delay_Reason_Popup_Form:focus,
+.Total_Wagons_Popup_Form:focus,
+.Loaded_Wagons_Popup_Form:focus,
+.Serving_Station_Departure_Popup_form:focus,
+.Departure_Date_Popup_Form:focus,
+.Railway_Placement_Time:focus,
+.Marshalling_of_wagons_In_time_Popup_Form:focus,
+.Marshalling_of_wagons_Out_time_Popup_Form:focus,
+.Uploading_Start_time_Form_Popup:focus,
+.Loading_Completion_Time_Popup_Form:focus,
+.Loading_Completion_Time_Delay_Reason_Popup_Form,
+.Rake_Formation_before_rake_release_Popup_Form:focus,
+.Rake_Formation_before_rake_release_Line_No_Popup_Form:focus,
+.Rake_Formation_Completion_Popup_Form:focus,
+.Rake_Formation_Completion_Line_No_Popup_Form:focus,
+.Rake_release_Popup_Form:focus,
+.Rake_Release_Line_No_Popup_Form,
+.Rake_Release_Total_No_Of_Wagons_Popup_Form:focus,
+.Rake_In_Motion_Weighment_In_Time_Popup_Form:focus,
+.Rake_In_Motion_Weighment_Out_Time:focus,
+.EOT_Time:focus,
+.Eot_delay_reason_Popup_Form:focus,
+.CnwExam_date_time:focus,
+.Attached_Wagona_Popup_Form:focus,
+.De-Attached_Wagona_Popup_Form,
+.Total_No_Of_Wagons_Popup_Form:focus,
+.Derailment_Wagons_Popup_Form:focus,
+.Derailment_Wagons_Line_No_Popup_Form:focus,
+.Rerailment_Wagons_Line_No_Popup_Form:focus,
+.Damage_Due_to_Derailment_Popup_Form:focus,
+.Derailment_Reason_Popup_Form:focus,
+.Line_Clear_Time_PopUp_Form:focus,
+.To_Station_Popup_Form:focus,
+.Serving_Station_Arrival_Name_Popup_Form:focus,
+.Serving_Station_Arrival_time_Final:focus
+{
+    border: none;
+    outline: none;
+}
+.Serving_Station_Arrival_Name_Popup_Form{
+    width: 120px;
+    height: 25px;
+    border: none;
+    margin-right: 10px;
+}
+
+.Rake_Id_Popup_Form {
+    width: 99%;
+    background: #C4DFDF;
+    border: none;
+    height: 25px;
+}
+
+.Rake_Id_Popup_Form:hover {
+    cursor: not-allowed;
+}
+
+.Loaded_Type_Popup_Form:hover {
+    cursor: pointer;
+}
+
+.Enter_Station_Popup_Form , .Serving_Station_Arrival_time_Final{
+    width: 99%;
+    border: none;
+    height: 25px;
+
+}
+
+.Indent_No_Popup_Form {
+    width: 180px;
+    border: none;
+    height: 25px;
+    margin-right: 20px;
+}
+
+.Indent_Date_Popup_Form {
+    width: 180px;
+    border: none;
+    height: 25px;
+
+}
+
+.Commodity_Popup_Form {
+    width: 120px;
+    border: none;
+    height: 25px;
+    margin-right: 10px;
+
+}
+
+.Sub_Commodity_Popup_Form {
+    width: 120px;
+    border: none;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.Community_Description_popup_Form {
+    width: 120px;
+    border: none;
+    height: 25px;
+
+}
+
+.Wagon_Type_Form_Popup {
+    width: 180px;
+    border: none;
+    height: 25px;
+    margin-right: 20px;
+}
+
+.Loco_No_Popup_Form {
+    width: 180px;
+    border: none;
+    height: 25px;
+}
+
+.Total_Wahons_loaded_In_Originating_Sataion {
+    width: 99%;
+    border: none;
+    height: 25px;
+
+}
+
+.Serving_Station_Arrival_Time_Popup_Form {
+    width: 120px;
+    border: none;
+    height: 25px;
+    margin-right: 10px;
+
+}
+
+.No_Of_Wagons_Serving_Station_Arrival_Popup_Form {
+    width: 120px;
+    border: none;
+    height: 25px;
+
+}
+
+.Wagon_Description_Popup_Form {
+    width: 99%;
+    border: none;
+    height: 25px;
+
+}
+
+.Line_clear_Popup_Form {
+    width: 90px;
+    height: 25px;
+    margin-right: 6px;
+    border: none;
+}
+
+.For_Siding_Popup_Form {
+    width: 90px;
+    height: 25px;
+    margin-right: 6px;
+    border: none;
+}
+
+.Line_No_Popup_Form {
+    width: 90px;
+    height: 25px;
+    margin-right: 6px;
+    border: none;
+
+}
+
+.Delay_Reason_Popup_Form {
+    width: 90px;
+    height: 25px;
+    border: none;
+
+}
+
+.Total_Wagons_Popup_Form,
+.Loaded_Wagons_Popup_Form {
+    width: 120px;
+    border: none;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.Empty_Wagons_Popup_Form {
+    width: 120px;
+    border: none;
+    height: 25px;
+}
+
+.Empty_Wagons_Popup_Form:hover {
+    cursor: not-allowed;
+}
+
+.Empty_Wagons_Popup_Form:focus {
+    cursor: not-allowed;
+    border: none;
+    outline: none;
+}
+
+.Serving_Station_Departure_Popup_form {
+    width: 180px;
+    border: none;
+    height: 25px;
+    margin-right: 20px;
+
+}
+
+.Departure_Date_Popup_Form {
+    width: 180px;
+    border: none;
+    height: 25px;
+
+}
+
+.Railway_Placement_Time {
+    width: 99%;
+    border: none;
+    height: 25px;
+
+}
+
+.Marshalling_of_wagons_In_time_Popup_Form {
+    width: 99%;
+    border: none;
+    height: 25px;
+}
+
+.Marshalling_of_wagons_Out_time_Popup_Form {
+    width: 99%;
+    border: none;
+    height: 25px;
+
+}
+
+.Uploading_Start_time_Form_Popup {
+    width: 99%;
+    border: none;
+    height: 25px;
+
+}
+
+.Loading_Completion_Time_Popup_Form {
+    width: 180px;
+    border: none;
+    height: 25px;
+    margin-right: 20px;
+
+}
+
+.Loading_Completion_Time_Delay_Reason_Popup_Form {
+    width: 180px;
+    border: none;
+    height: 25px;
+
+}
+
+.Rake_Formation_before_rake_release_Popup_Form {
+    width: 180px;
+    border: none;
+    height: 25px;
+    margin-right: 20px;
+
+}
+.Rake_Formation_before_rake_release_Line_No_Popup_Form{
+    width: 180px;
+    border: none;
+    height: 25px;
+
+}
+.Rake_Formation_Completion_Popup_Form{
+    width: 180px;
+    border: none;
+    height: 25px;
+    margin-right: 20px;
+}
+.Rake_Formation_Completion_Line_No_Popup_Form{
+    width: 180px;
+    border: none;
+    height: 25px;
+}
+.Rake_release_Popup_Form{
+    width: 120px;
+    border: none;
+    height: 25px;
+    margin-right: 10px;
+}
+.Rake_Release_Line_No_Popup_Form{
+    width: 120px;
+    border: none;
+    height: 25px;
+    margin-right: 10px;
+}
+.Rake_Release_Total_No_Of_Wagons_Popup_Form{
+    width: 120px;
+    border: none;
+    height: 25px;
+
+}
+.Total_No_Of_Wagons_Popup_Form{
+    width: 120px;
+    border: none;
+    height: 25px;
+    margin-right: 10px;
+
+}
+.Backloadeing_Button_Popup_Form{
+    background: orange;
+    color: white;
+    width: 120px;
+    border: none;
+    height: 25px;
+    outline: none;
+}
+.Backloadeing_Button_Popup_Form:hover{
+    background: orangered;
+    color: white;
+    outline: none;
+    border:none;
+}
+.Backloadeing_Button_Popup_Form:focus{
+    background: orangered;
+    color: white;
+    outline: none;
+    border:none;
+    cursor: not-allowed;
+
+}
+.Rake_In_Motion_Weighment_In_Time_Popup_Form{
+    width: 99%;
+    border: none;
+    height: 25px;
+}
+.Rake_In_Motion_Weighment_Out_Time{
+    width: 99%;
+    border: none;
+    height: 25px;
+}
+.EOT_Time{
+    width: 180px;
+    border: none;
+    height: 25px;
+    margin-right: 20px;
+}
+.Eot_delay_reason_Popup_Form{
+    width: 180px;
+    border: none;
+    height: 25px;
+
+}
+.CnwExam_date_time{
+    width: 99%;
+    border: none;
+    height: 25px;
+}
+.Attached_Wagona_Popup_Form{
+    width: 180px;
+    border: none;
+    height: 25px;
+    margin-right: 20px;
+}
+.De-Attached_Wagona_Popup_Form{
+    width: 180px;
+    border: none;
+    height: 25px;
+
+}
+.Derailment_Wagons_Popup_Form{
+    width: 180px;
+    border: none;
+    height: 25px;
+    margin-right: 20px;
+}
+.Derailment_Wagons_Line_No_Popup_Form{
+    width: 180px;
+    border: none;
+    height: 25px;
+
+}
+.Rerailment_Wagons_Line_No_Popup_Form{
+    width: 180px;
+    border: none;
+    height: 25px;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+.Damage_Due_to_Derailment_Popup_Form{
+    width: 180px;
+    border: none;
+    height: 25px;
+    margin-top: 5px;
+}
+.Derailment_Reason_Popup_Form{
+    width: 180px;
+    border: none;
+    height: 25px;
+    margin-top: 5px;
+}
+.Line_Clear_Time_PopUp_Form{
+    width: 180px;
+    border: none;
+    height: 25px;
+    margin-right: 20px;
+
+}
+.To_Station_Popup_Form{
+    width: 180px;
+    border: none;
+    height: 25px;
+
+}

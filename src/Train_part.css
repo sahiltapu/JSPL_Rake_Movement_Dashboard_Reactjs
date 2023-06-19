@@ -1,0 +1,97 @@
+.Outer_Div {
+    background: white;
+    width: 100%;
+    height: 120%;
+}
+
+.Inner_Div {
+    width: 98%;
+    height: 110px;
+    margin-left: 1%;
+
+
+    background: white;
+}
+
+.VDO1_DIV {
+    background:url('graf-bg.gif')no-repeat;
+    opacity: 0.7;
+	background-size:cover;
+	background-position:center;
+    width: 600px;
+    height: 110px;
+}
+
+.Curr_in_div {
+    position: relative;
+    height: 110px;
+    width: 150px;
+    background: #0073b7;
+    top: -110px;
+    left: 545px;
+
+}
+
+.VDO2_DIV {
+    background:url('graf-bg_out.gif')no-repeat;
+	background-size:cover;
+	background-position:center;
+    opacity: 0.7;
+    position: relative;
+    width: 600px;
+    height: 110px;
+    top: -220px;
+    left: 715px;
+}
+
+
+
+.Curr_out_div {
+    position: relative;
+    height: 110px;
+    width: 150px;
+    background: #e8663c;
+    top: -330px;
+    left: 1256px;
+}
+.Curr_in_form{
+    position:relative;
+    top:-70px;
+    left:300px;
+    width: fit-content;
+}
+
+.find_button{
+    background: rgb(88, 88, 242);
+}
+.find_button:hover{
+    background: blue;
+}
+.Curr_out_form{
+    position:relative;
+    width: fit-content;
+    top:-70px;
+    left:300px;
+
+}
+.Rake_Movement_In_Table{
+    
+    padding-left: 15px;
+
+    bottom: 0%;
+    height: fit-content;
+    position: relative;
+    padding-right: 10px;
+
+
+}
+.Rake_Movement_Out_Table{
+    bottom: 0%;
+    height: fit-content;
+    position: relative;
+   
+    padding-right: 15px;
+    padding-left: 10px;
+
+
+}
