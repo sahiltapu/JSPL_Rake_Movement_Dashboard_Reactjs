@@ -37,11 +37,11 @@
 	background-size:cover;
 	background-position:center;
     opacity: 0.7;
-    position: relative;
     width: 600px;
+    position: absolute;
     height: 110px;
-    top: -220px;
-    left: 715px;
+    top: 28.2%;
+    left: 50.6%;
 }
 
 
@@ -51,8 +51,9 @@
     height: 110px;
     width: 150px;
     background: #e8663c;
-    top: -330px;
-    left: 1256px;
+    position: absolute;
+    top: 28.2%;
+    left: 88.5%;
 }
 .Curr_in_form{
     position:relative;
