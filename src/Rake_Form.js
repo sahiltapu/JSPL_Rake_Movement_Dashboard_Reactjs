@@ -26,7 +26,6 @@ function RakeForm() {
   const handleShow = () => setShow(true);
   const handleClose = () => {
     setShow(false);
-    setLoadedType("");
     setIndentType("text");
     setServingStationArrivalTime("text");
     setServingStationDepartureTime("text");
