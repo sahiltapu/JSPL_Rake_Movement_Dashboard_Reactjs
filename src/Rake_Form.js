@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
 import "./Rake_Form.css";
+import AddDeffparts from "./Defficiency_parts";
 
 function RakeForm() {
   const cellStyle1 = {
@@ -24,6 +25,9 @@ function RakeForm() {
   };
   const [show, setShow] = useState(false);
   const handleShow = () => setShow(true);
+  const [AddMultipleDefficiencyinwagons, setAddMultipleDefficiencyinwagons] =
+    useState(false);
+
   const handleClose = () => {
     setShow(false);
     setIndentType("text");
@@ -42,7 +46,9 @@ function RakeForm() {
     setRakeRelease("text");
     setLineClear("text");
     setServing_Station_Arrival_time_Final("Text");
-    
+    setSidingArrivalTime("Text");
+    setPlacement_time("Text");
+    setSidingDepartureTime("text");
   };
   const [LoadedType, setLoadedType] = useState("");
   const handle_Select_Change_Loaded_Type = (event) => {
@@ -63,7 +69,9 @@ function RakeForm() {
     setRakeRelease("text");
     setLineClear("text");
     setServing_Station_Arrival_time_Final("Text");
-    
+    setSidingArrivalTime("Text");
+    setPlacement_time("text");
+    setSidingDepartureTime("text");
   };
   const [IndentType, setIndentType] = useState("Text");
   const handle_Indent_Type = () => {
@@ -132,18 +140,30 @@ function RakeForm() {
   const handle_LineClear_Time = () => {
     setLineClear("datetime-local");
   };
-  const [Serving_Station_Arrival_time_Final, setServing_Station_Arrival_time_Final] = useState("Text");
+  const [
+    Serving_Station_Arrival_time_Final,
+    setServing_Station_Arrival_time_Final,
+  ] = useState("Text");
   const handle_Serving_Station_Arrival_time_Final = () => {
     setServing_Station_Arrival_time_Final("datetime-local");
   };
-  const [irreversableButton,setirreversableButton] = useState(false)
+  const [irreversableButton, setirreversableButton] = useState(false);
   const handle_Irreversable_process = () => {
     alert("Warning !! Irreversable process.");
     setirreversableButton(true);
   };
-
-
-
+  const [SidingArrivalTime, setSidingArrivalTime] = useState("");
+  const handle_SidingArrivalTime = () => {
+    setSidingArrivalTime("datetime-local");
+  };
+  const [Placement_time, setPlacement_time] = useState("");
+  const handle_Placement_time = () => {
+    setPlacement_time("datetime-local");
+  };
+  const [SidingDepartureTime, setSidingDepartureTime] = useState("");
+  const handle_SidingDepartureTime = () => {
+    setSidingDepartureTime("datetime-local");
+  };
   return (
     <>
       <button className="Form_Button" onClick={handleShow}>
@@ -154,7 +174,10 @@ function RakeForm() {
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
-          <table style={{ border: "0.3px solid gray", background: "#f2f1f1" }} className="Left_table_popup">
+          <table
+            style={{ border: "0.3px solid gray", background: "#f2f1f1" }}
+            className="Left_table_popup"
+          >
             <tr>
               <td style={cellStyle1}>Rake Name</td>
               <td style={cellStyle2}>
@@ -293,11 +316,13 @@ function RakeForm() {
                   />
                 ) : LoadedType === "Empty" ? (
                   <>
-                  <select className="Serving_Station_Arrival_Name_Popup_Form">
-                    <option value = "" disabled selected>To Station</option>
-                    <option value = "">JSPC</option>
-                    <option value = "">ABCD</option>
-                  </select>
+                    <select className="Serving_Station_Arrival_Name_Popup_Form">
+                      <option value="" disabled selected>
+                        To Station
+                      </option>
+                      <option value="">JSPC</option>
+                      <option value="">ABCD</option>
+                    </select>
                     <input
                       type={ServingStationArrivalTime}
                       onClick={handle_Serving_Station_Arrival_Time}
@@ -441,22 +466,52 @@ function RakeForm() {
               <td style={cellStyle2}>
                 {LoadedType === "Loaded" ? (
                   <>
-                  <select className="Serving_Station_Arrival_Name_Popup_Form" style={{width:"180px",marginRight:"20px"}}>
-                    <option value = "" disabled selected>To Station</option>
-                    <option value = "">JSPC</option>
-                    <option value = "">ABCD</option>
-                  </select>
+                    <select
+                      className="Serving_Station_Arrival_Name_Popup_Form"
+                      style={{ width: "180px", marginRight: "20px" }}
+                    >
+                      <option value="" disabled selected>
+                        To Station
+                      </option>
+                      <option value="">JSPC</option>
+                      <option value="">ABCD</option>
+                    </select>
                     <input
                       type={ServingStationArrivalTime}
                       onClick={handle_Serving_Station_Arrival_Time}
                       placeholder="Arrival Date-time"
                       className="Serving_Station_Arrival_Time_Popup_Form"
-                      style={{width:"180px",marginRight:"0px"}}
+                      style={{ width: "180px", marginRight: "0px" }}
                     />
                   </>
                 ) : LoadedType === "Empty" ? (
                   <p style={{ marginBottom: "0" }}>
-                    Siding Arvl. / Plmt. / At Siding/ Line no
+                    <>
+                      <input
+                        type={SidingArrivalTime}
+                        placeholder="Arrival Time"
+                        className="SidingArrivalTime_Popup_Form"
+                        onClick={handle_SidingArrivalTime}
+                      />
+                      <input
+                        type={Placement_time}
+                        placeholder="Placement Time"
+                        className="Placement_Time_Popup_Form"
+                        onClick={handle_Placement_time}
+                      />
+                      <select className="At_Siding_Popup_Form">
+                        <option value="" disabled selected>
+                          Select
+                        </option>
+                        <option value="">A</option>
+                        <option value="">B</option>
+                      </select>
+                      <input
+                        type="number"
+                        placeholder="Line No."
+                        className="Line_No_Siding_Arrival_Time_Popup_Form"
+                      />
+                    </>
                   </p>
                 ) : (
                   <p style={{ marginBottom: "0" }}>
@@ -582,7 +637,32 @@ function RakeForm() {
               </td>
               <td style={cellStyle2}>
                 {LoadedType === "Loaded" ? (
-                  <span></span>
+                  <>
+                    <input
+                      type={SidingArrivalTime}
+                      placeholder="Arrival Time"
+                      className="SidingArrivalTime_Popup_Form"
+                      onClick={handle_SidingArrivalTime}
+                    />
+                    <input
+                      type={Placement_time}
+                      placeholder="Placement Time"
+                      className="Placement_Time_Popup_Form"
+                      onClick={handle_Placement_time}
+                    />
+                    <select className="At_Siding_Popup_Form">
+                      <option value="" disabled selected>
+                        Select
+                      </option>
+                      <option value="">A</option>
+                      <option value="">B</option>
+                    </select>
+                    <input
+                      type="number"
+                      placeholder="Line No."
+                      className="Line_No_Siding_Arrival_Time_Popup_Form"
+                    />
+                  </>
                 ) : LoadedType === "Empty" ? (
                   <>
                     <input
@@ -626,6 +706,11 @@ function RakeForm() {
                 )}
               </td>
             </tr>
+          </table>
+          <table
+            style={{ border: "0.3px solid gray", background: "#f2f1f1" }}
+            className="right_table_popup"
+          >
             <tr>
               <td style={cellStyle1}>
                 {LoadedType === "Loaded" ? (
@@ -670,11 +755,6 @@ function RakeForm() {
                 )}
               </td>
             </tr>
-          </table>
-          <table
-            style={{ border: "0.3px solid gray", background: "#f2f1f1" }}
-            className="right_table_popup"
-          >
             <tr>
               <td style={cellStyle1}>
                 {LoadedType === "Loaded" ? (
@@ -748,10 +828,12 @@ function RakeForm() {
                   </>
                 ) : LoadedType === "Empty" ? (
                   <>
-                    <input type={RakeRelease}
-                    placeholder="Release-Time"
-                    onClick={handle_RakeRelease_time}
-                    className="Rake_release_Popup_Form" />
+                    <input
+                      type={RakeRelease}
+                      placeholder="Release-Time"
+                      onClick={handle_RakeRelease_time}
+                      className="Rake_release_Popup_Form"
+                    />
                     <input
                       type="Number"
                       placeholder="Line No."
@@ -783,10 +865,12 @@ function RakeForm() {
               <td style={cellStyle2}>
                 {LoadedType === "Loaded" ? (
                   <>
-                    <input type={RakeRelease}
-                    placeholder="Release-Time"
-                    onClick={handle_RakeRelease_time}
-                    className="Rake_release_Popup_Form" />
+                    <input
+                      type={RakeRelease}
+                      placeholder="Release-Time"
+                      onClick={handle_RakeRelease_time}
+                      className="Rake_release_Popup_Form"
+                    />
                     <input
                       type="Number"
                       placeholder="Total wagons"
@@ -904,7 +988,8 @@ function RakeForm() {
               </td>
               <td style={cellStyle2}>
                 {LoadedType === "Loaded" ? (
-                  <span>Defficiency in wagons' parts (Multiple)</span>
+                  <AddDeffparts />
+                     
                 ) : LoadedType === "Empty" ? (
                   <>
                     <input
@@ -962,9 +1047,10 @@ function RakeForm() {
             </tr>
             <tr>
               <td style={cellStyle1}>
-              {LoadedType === "Loaded" ? (
+                {LoadedType === "Loaded" ? (
                   <span>
-                   Derailment /Line no/ Rerailment/ Damage /Reasons for derailment
+                    Derailment /Line no/ Rerailment/ Damage /Reasons for
+                    derailment
                   </span>
                 ) : LoadedType === "Empty" ? (
                   <span>Attached & Detached Wagons/ BV</span>
@@ -973,27 +1059,47 @@ function RakeForm() {
                 )}
               </td>
               <td style={cellStyle2}>
-              {LoadedType === "Loaded" ? (
+                {LoadedType === "Loaded" ? (
                   <>
-                  <input type="number" placeholder="No. of Derailment wagons" className="Derailment_Wagons_Popup_Form" />
-                  <input type="number" placeholder="Line No." className="Derailment_Wagons_Line_No_Popup_Form" />
-                  <input type="number" placeholder="No. of Rerailment wagons" className="Rerailment_Wagons_Line_No_Popup_Form" />
-                  <input type="Text" placeholder="Damage" className="Damage_Due_to_Derailment_Popup_Form" />
-                  <input type="Text" placeholder="Reason for Derailment" className="Derailment_Reason_Popup_Form" />
+                    <input
+                      type="number"
+                      placeholder="No. of Derailment wagons"
+                      className="Derailment_Wagons_Popup_Form"
+                    />
+                    <input
+                      type="number"
+                      placeholder="Line No."
+                      className="Derailment_Wagons_Line_No_Popup_Form"
+                    />
+                    <input
+                      type="number"
+                      placeholder="No. of Rerailment wagons"
+                      className="Rerailment_Wagons_Line_No_Popup_Form"
+                    />
+                    <input
+                      type="Text"
+                      placeholder="Damage"
+                      className="Damage_Due_to_Derailment_Popup_Form"
+                    />
+                    <input
+                      type="Text"
+                      placeholder="Reason for Derailment"
+                      className="Derailment_Reason_Popup_Form"
+                    />
                   </>
                 ) : LoadedType === "Empty" ? (
                   <>
-                  <input
-                    type="number"
-                    placeholder="Attached Wagons"
-                    className="Attached_Wagona_Popup_Form"
-                  />
-                  <input
-                    type="number"
-                    placeholder="De-Attached Wagons"
-                    className="De-Attached_Wagona_Popup_Form"
-                  />
-                </>
+                    <input
+                      type="number"
+                      placeholder="Attached Wagons"
+                      className="Attached_Wagona_Popup_Form"
+                    />
+                    <input
+                      type="number"
+                      placeholder="De-Attached Wagons"
+                      className="De-Attached_Wagona_Popup_Form"
+                    />
+                  </>
                 ) : (
                   <span>Select an option above in ( * )</span>
                 )}
@@ -1001,39 +1107,61 @@ function RakeForm() {
             </tr>
             <tr>
               <td style={cellStyle1}>
-              {LoadedType === "Loaded" ? (
-                  <span>
-                    Line Clear Recvd Time / To Station
-                  </span>
+                {LoadedType === "Loaded" ? (
+                  <span>Line Clear Recvd Time / To Station</span>
                 ) : LoadedType === "Empty" ? (
-                  <span>Derailment / Line no / Rerailment / Damage / Reasons for derailment</span>
+                  <span>
+                    Derailment / Line no / Rerailment / Damage / Reasons for
+                    derailment
+                  </span>
                 ) : (
                   <span>Select an option above in ( * )</span>
                 )}
               </td>
               <td style={cellStyle2}>
-              {LoadedType === "Loaded" ? (
-                 <>
-                 <input 
-                 type={LineClear}
-                 onClick={handle_LineClear_Time}
-                 placeholder="Line clear Time"
-                 className="Line_Clear_Time_PopUp_Form" />
-                 <select className="To_Station_Popup_Form">
+                {LoadedType === "Loaded" ? (
+                  <>
+                    <input
+                      type={LineClear}
+                      onClick={handle_LineClear_Time}
+                      placeholder="Line clear Time"
+                      className="Line_Clear_Time_PopUp_Form"
+                    />
+                    <select className="To_Station_Popup_Form">
                       <option value="" disabled selected>
                         To Station
                       </option>
                       <option value="">JSPC</option>
                       <option value="">ABCD</option>
-                 </select>
-                 </>
+                    </select>
+                  </>
                 ) : LoadedType === "Empty" ? (
                   <>
-                  <input type="number" placeholder="No. of Derailment wagons" className="Derailment_Wagons_Popup_Form" />
-                  <input type="number" placeholder="Line No." className="Derailment_Wagons_Line_No_Popup_Form" />
-                  <input type="number" placeholder="No. of Rerailment wagons" className="Rerailment_Wagons_Line_No_Popup_Form" />
-                  <input type="Text" placeholder="Damage" className="Damage_Due_to_Derailment_Popup_Form" />
-                  <input type="Text" placeholder="Reason for Derailment" className="Derailment_Reason_Popup_Form" />
+                    <input
+                      type="number"
+                      placeholder="No. of Derailment wagons"
+                      className="Derailment_Wagons_Popup_Form"
+                    />
+                    <input
+                      type="number"
+                      placeholder="Line No."
+                      className="Derailment_Wagons_Line_No_Popup_Form"
+                    />
+                    <input
+                      type="number"
+                      placeholder="No. of Rerailment wagons"
+                      className="Rerailment_Wagons_Line_No_Popup_Form"
+                    />
+                    <input
+                      type="Text"
+                      placeholder="Damage"
+                      className="Damage_Due_to_Derailment_Popup_Form"
+                    />
+                    <input
+                      type="Text"
+                      placeholder="Reason for Derailment"
+                      className="Derailment_Reason_Popup_Form"
+                    />
                   </>
                 ) : (
                   <span>Select an option above in ( * )</span>
@@ -1042,9 +1170,10 @@ function RakeForm() {
             </tr>
             <tr>
               <td style={cellStyle1}>
-              {LoadedType === "Loaded" ? (
+                {LoadedType === "Loaded" ? (
                   <span>
-                   Siding Departure TIme / From siding / Reasons for Delay in Ready to Dep.
+                    Siding Departure TIme / From siding / Reasons for Delay in
+                    Ready to Dep.
                   </span>
                 ) : LoadedType === "Empty" ? (
                   <span>Line Clear Recvd Time / To Station</span>
@@ -1053,24 +1182,42 @@ function RakeForm() {
                 )}
               </td>
               <td style={cellStyle2}>
-              {LoadedType === "Loaded" ? (
-                  <span>
-                    Siding Departure TIme / From siding / Reasons for Delay in Ready to Dep.
-                  </span>
+                {LoadedType === "Loaded" ? (
+                  <>
+                    <input
+                      type={SidingDepartureTime}
+                      className="SidingDepartureTime_Popup_Form"
+                      placeholder="Departure time"
+                      onClick={handle_SidingDepartureTime}
+                    />
+                    <select className="For_Siding_Departure_Time_Popup_Form">
+                      <option value="" disabled selected>
+                        Select
+                      </option>
+                      <option value="">A</option>
+                      <option value="">B</option>
+                    </select>
+                    <input
+                      type="text"
+                      placeholder="Delay reason"
+                      className="Delay_reason_Departure_Time_arrival_Popup_form"
+                    />
+                  </>
                 ) : LoadedType === "Empty" ? (
-                 <>
-                  <input 
-                  type={LineClear}
-                  onClick={handle_LineClear_Time}
-                  placeholder="Line clear Time"
-                  className="Line_Clear_Time_PopUp_Form" />
-                  <select className="To_Station_Popup_Form">
-                       <option value="" disabled selected>
-                         To Station
-                       </option>
-                       <option value="">JSPC</option>
-                       <option value="">ABCD</option>
-                  </select>
+                  <>
+                    <input
+                      type={LineClear}
+                      onClick={handle_LineClear_Time}
+                      placeholder="Line clear Time"
+                      className="Line_Clear_Time_PopUp_Form"
+                    />
+                    <select className="To_Station_Popup_Form">
+                      <option value="" disabled selected>
+                        To Station
+                      </option>
+                      <option value="">JSPC</option>
+                      <option value="">ABCD</option>
+                    </select>
                   </>
                 ) : (
                   <span>Select an option above in ( * )</span>
@@ -1079,25 +1226,48 @@ function RakeForm() {
             </tr>
             <tr>
               <td style={cellStyle1}>
-              {LoadedType === "Loaded" ? (
-                  <span>
-                    Serving Station Arvl. Time
-                  </span>
+                {LoadedType === "Loaded" ? (
+                  <span>Serving Station Arvl. Time</span>
                 ) : LoadedType === "Empty" ? (
-                  <span>Siding Departure TIme / From siding / Reasons for Delay in Ready to Dep.</span>
+                  <span>
+                    Siding Departure TIme / From siding / Reasons for Delay in
+                    Ready to Dep.
+                  </span>
                 ) : (
                   <span>Select an option above in ( * )</span>
                 )}
               </td>
               <td style={cellStyle2}>
-              {LoadedType === "Loaded" ? (
-                  <input
-                  type={Serving_Station_Arrival_time_Final}
-                  placeholder="Serving Station arrival time"
-                  className="Serving_Station_Arrival_time_Final"
-                  onClick={handle_Serving_Station_Arrival_time_Final} />
+                {LoadedType === "Loaded" ? (
+                  <>
+                    <input
+                      type={Serving_Station_Arrival_time_Final}
+                      placeholder="Serving Station arrival time"
+                      className="Serving_Station_Arrival_time_Final"
+                      onClick={handle_Serving_Station_Arrival_time_Final}
+                    />
+                  </>
                 ) : LoadedType === "Empty" ? (
-                  <span>Serving Station Arrival / Nos. of Wagons</span>
+                  <>
+                    <input
+                      type={SidingDepartureTime}
+                      className="SidingDepartureTime_Popup_Form"
+                      placeholder="Departure time"
+                      onClick={handle_SidingDepartureTime}
+                    />
+                    <select className="For_Siding_Departure_Time_Popup_Form">
+                      <option value="" disabled selected>
+                        Select
+                      </option>
+                      <option value="">A</option>
+                      <option value="">B</option>
+                    </select>
+                    <input
+                      type="text"
+                      placeholder="Delay reason"
+                      className="Delay_reason_Departure_Time_arrival_Popup_form"
+                    />
+                  </>
                 ) : (
                   <span>Select an option above in ( * )</span>
                 )}
@@ -1105,7 +1275,7 @@ function RakeForm() {
             </tr>
             <tr>
               <td style={cellStyle1}>
-              {LoadedType === "Loaded" ? (
+                {LoadedType === "Loaded" ? (
                   <></>
                 ) : LoadedType === "Empty" ? (
                   <span>Serving Station Arvl. Time</span>
@@ -1114,14 +1284,15 @@ function RakeForm() {
                 )}
               </td>
               <td style={cellStyle2}>
-              {LoadedType === "Loaded" ? (
-                 <></>
+                {LoadedType === "Loaded" ? (
+                  <></>
                 ) : LoadedType === "Empty" ? (
                   <input
-                  type={Serving_Station_Arrival_time_Final}
-                  placeholder="Serving Station arrival time"
-                  className="Serving_Station_Arrival_time_Final"
-                  onClick={handle_Serving_Station_Arrival_time_Final} />
+                    type={Serving_Station_Arrival_time_Final}
+                    placeholder="Serving Station arrival time"
+                    className="Serving_Station_Arrival_time_Final"
+                    onClick={handle_Serving_Station_Arrival_time_Final}
+                  />
                 ) : (
                   <span>Select an option above in ( * )</span>
                 )}

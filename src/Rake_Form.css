@@ -4,7 +4,7 @@
     left: 570px;
 }
 .Left_table_popup{
-    margin-bottom: 10px;
+    margin-bottom: 50px;
 }
 
 .Rake_Name_Dropdown_Popup_Form,
@@ -66,7 +66,16 @@
 .Line_Clear_Time_PopUp_Form:focus,
 .To_Station_Popup_Form:focus,
 .Serving_Station_Arrival_Name_Popup_Form:focus,
-.Serving_Station_Arrival_time_Final:focus
+.Serving_Station_Arrival_time_Final:focus,
+.SidingArrivalTime_Popup_Form:focus,
+.Placement_Time_Popup_Form:focus,
+.At_Siding_Popup_Form:focus,
+.Line_No_Siding_Arrival_Time_Popup_Form:focus,
+.SidingDepartureTime_Popup_Form:focus,
+.For_Siding_Departure_Time_Popup_Form:focus,
+.Delay_reason_Departure_Time_arrival_Popup_form:focus,
+.Part_detail_text_field:focus,
+.Condition_Of_Parts:focus
 {
     border: none;
     outline: none;
@@ -441,4 +450,71 @@
     border: none;
     height: 25px;
 
+}
+.SidingArrivalTime_Popup_Form,
+.Placement_Time_Popup_Form,
+.At_Siding_Popup_Form{
+    width: 90px;
+    height: 25px;
+    margin-right: 6px;
+    border: none;
+}
+.Line_No_Siding_Arrival_Time_Popup_Form{
+    width: 90px;
+    height: 25px;
+    border: none;
+}
+.SidingDepartureTime_Popup_Form{
+    width: 120px;
+    border: none;
+    height: 25px;
+    margin-right: 10px;
+}
+.For_Siding_Departure_Time_Popup_Form{
+    width: 120px;
+    border: none;
+    height: 25px;
+    margin-right: 10px;
+}
+.Delay_reason_Departure_Time_arrival_Popup_form{
+    width: 120px;
+    border: none;
+    height: 25px
+}
+.Defficiency_in_wagon_parts_Button_Popup_form{
+    width:99%;
+    height: 25px;
+    background: green;
+    opacity: 0.6;
+    color: white;
+    border:none;
+}
+.Defficiency_in_wagon_parts_Button_Popup_form:hover{
+    background: green;
+    opacity: 1;
+
+}
+.Popup_Add_Item_button{
+    width: 150px;
+    height: 40px;
+    background: green;
+    color: white;
+    opacity: 0.6;
+    border:none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.Popup_Add_Item_button:hover{
+    background: green;
+    opacity: 1;
+}
+.Part_detail_text_field{
+    width: 99%;
+    height:25px;
+    border:none;
+}
+.Condition_Of_Parts{
+    width: 99%;
+    height:25px;
+    border:none;
 }
