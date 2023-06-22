@@ -75,7 +75,11 @@
 .For_Siding_Departure_Time_Popup_Form:focus,
 .Delay_reason_Departure_Time_arrival_Popup_form:focus,
 .Part_detail_text_field:focus,
-.Condition_Of_Parts:focus
+.Condition_Of_Parts:focus,
+.Plant_Name_Wagon_Shop:focus,
+.Line_No_Wagon_Shop:focus,
+.No_of_Wagons_In_Wagon_Shop:focus,
+.Completion_Time_Wagons_Shop:focus
 {
     border: none;
     outline: none;
@@ -517,4 +521,24 @@
     width: 99%;
     height:25px;
     border:none;
+}
+.Wagons_placed_at_loading_shop_Button_Popup_form{
+    width: 99%;
+    height: 25px;
+    background: green;
+    color: white;
+    opacity: 0.6;
+    border:none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+.Wagons_placed_at_loading_shop_Button_Popup_form:hover{
+    background: green;
+    opacity: 1;
+}
+.Plant_Name_Wagon_Shop,.Line_No_Wagon_Shop,.No_of_Wagons_In_Wagon_Shop,.Completion_Time_Wagons_Shop{
+    width:99%;
+    height: 25px;
+    border: none;
 }

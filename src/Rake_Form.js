@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
 import "./Rake_Form.css";
 import AddDeffparts from "./Defficiency_parts";
+import AddWagonsShops from "./Wagon_Placed_Shops";
 
 function RakeForm() {
   const cellStyle1 = {
@@ -700,7 +701,7 @@ function RakeForm() {
                     />
                   </span>
                 ) : LoadedType === "Empty" ? (
-                  <span>Wagons placed at loading shop (Multiple)</span>
+                  <AddWagonsShops />
                 ) : (
                   <span>Select an option above in ( * )</span>
                 )}
