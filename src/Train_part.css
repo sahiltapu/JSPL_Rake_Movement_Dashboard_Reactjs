@@ -1,98 +1,139 @@
 .Outer_Div {
     background: white;
     width: 100%;
-    height: 120%;
+    height: fit-content;
 }
 
 .Inner_Div {
     width: 98%;
     height: 110px;
     margin-left: 1%;
-
-
     background: white;
 }
 
 .VDO1_DIV {
-    background:url('graf-bg.gif')no-repeat;
+    background: url('graf-bg.gif') no-repeat;
     opacity: 0.7;
-	background-size:cover;
-	background-position:center;
-    width: 600px;
+    background-size: cover;
+    background-position: center;
+    width: 40vw;
     height: 110px;
 }
 
 .Curr_in_div {
     position: relative;
     height: 110px;
-    width: 150px;
+    width: 10vw;
     background: #0073b7;
     top: -110px;
-    left: 545px;
-
+    left: 38vw;
 }
 
 .VDO2_DIV {
-    background:url('graf-bg_out.gif')no-repeat;
-	background-size:cover;
-	background-position:center;
+    background: url('graf-bg_out.gif') no-repeat;
+    background-size: cover;
+    background-position: center;
     opacity: 0.7;
-    width: 600px;
+    width: 40vw;
     position: absolute;
     height: 110px;
     top: 28.2%;
     left: 50.6%;
 }
 
-
-
 .Curr_out_div {
     position: relative;
     height: 110px;
-    width: 150px;
+    width: 10vw;
     background: #e8663c;
     position: absolute;
     top: 28.2%;
     left: 88.5%;
 }
-.Curr_in_form{
-    position:relative;
-    top:-70px;
-    left:300px;
+
+.Curr_in_form {
+    position: relative;
+    top: -70px;
+    left: 15vw;
     width: fit-content;
 }
 
-.find_button{
+.find_button {
     background: rgb(88, 88, 242);
 }
-.find_button:hover{
+
+.find_button:hover {
     background: blue;
 }
-.Curr_out_form{
-    position:relative;
+
+.Curr_out_form {
+    position: relative;
     width: fit-content;
-    top:-70px;
-    left:300px;
-
+    top: -70px;
+    left: 15vw;
 }
-.Rake_Movement_In_Table{
-    
-    padding-left: 15px;
 
+.Rake_Movement_In_Table {
+    padding-left: 1vw;
     bottom: 0%;
     height: fit-content;
     position: relative;
-    padding-right: 10px;
-
-
+    padding-right: 1vw;
 }
-.Rake_Movement_Out_Table{
+
+.Rake_Movement_Out_Table {
     bottom: 0%;
     height: fit-content;
     position: relative;
-   
-    padding-right: 15px;
-    padding-left: 10px;
+    padding-right: 1.5vw;
+    padding-left: 1vw;
+}
 
+/* Responsive Styles */
 
+@media screen and (max-width: 768px) {
+    .VDO1_DIV,
+    .VDO2_DIV {
+        width: 500vw;
+    }
+
+    .Curr_in_div,
+    .Curr_out_div {
+        width: 200px;
+    }
+
+    .Curr_in_form,
+    .Curr_out_form {
+        top: -70px;
+        left: 5vw;
+    }
+
+    .Rake_Movement_In_Table,
+    .Rake_Movement_Out_Table {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .VDO1_DIV,
+    .VDO2_DIV {
+        width: 95vw;
+    }
+
+    .Curr_in_div,
+    .Curr_out_div {
+        width: 40vw;
+    }
+
+    .Curr_in_form,
+    .Curr_out_form {
+        left: 2vw;
+    }
+
+    .Rake_Movement_In_Table,
+    .Rake_Movement_Out_Table {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
 }

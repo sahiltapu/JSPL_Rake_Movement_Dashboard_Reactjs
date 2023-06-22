@@ -15,7 +15,7 @@
 
 }
 .New-movement-button {
-    position: absolute;
+    position: relative;
     background-color: rgb(213, 162, 22);
     color: white;
     top: 19.5%;
@@ -28,7 +28,14 @@
     outline:none;
     font-size: 1.2vw;
 }
-
+@media screen and (max-width: 400px) {
+    /* Add additional styles for screens with max width of 768px */
+    .New-movement-button {
+        font-size: 4vw;
+        top: 25%;
+        left: 75%;
+    }
+}
 .New-movement-button:hover{
     color: white;
     background: rgb(161, 111, 2);
