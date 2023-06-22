@@ -46,8 +46,8 @@
     height: 110px;
     width: 10vw;
     background: #e8663c;
-    position: absolute;
-    top: 28.2%;
+    position: relative;
+    top:-330px;
     left: 88.5%;
 }
 
