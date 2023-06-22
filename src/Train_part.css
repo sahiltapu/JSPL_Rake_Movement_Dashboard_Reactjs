@@ -76,6 +76,7 @@
 .Rake_Movement_In_Table {
     padding-left: 1vw;
     bottom: 0%;
+    width: 715px;
     height: fit-content;
     position: relative;
     padding-right: 1vw;
@@ -87,6 +88,9 @@
     position: relative;
     padding-right: 1.5vw;
     padding-left: 1vw;
+    width: 715px;
+    top:-110px;
+    left:49.5%;
 }
 
 /* Responsive Styles */
@@ -110,6 +114,7 @@
 
     .Rake_Movement_In_Table,
     .Rake_Movement_Out_Table {
+        width:715px;
         padding-left: 5px;
         padding-right: 5px;
     }

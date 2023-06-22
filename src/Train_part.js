@@ -36,14 +36,12 @@ function Train_part() {
                 </div>
                 <div>
                     <br />
-                    <table>
-                        <td className='Rake_Movement_In_Table'>
-                            <TableComponent1 />
-                        </td>
-                        <td className='Rake_Movement_Out_Table'>
-                            <TableComponent2 />
-                        </td>
-                    </table>
+                    <div className='Rake_Movement_In_Table'>
+                    <TableComponent1 />
+                    </div>
+                    <div className='Rake_Movement_Out_Table'>
+                    <TableComponent2 />
+                    </div>
 
                 </div>
             </div>
