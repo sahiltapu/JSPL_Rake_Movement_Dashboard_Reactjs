@@ -35,9 +35,9 @@
     background-position: center;
     opacity: 0.7;
     width: 40vw;
-    position: absolute;
+    position: relative;
     height: 110px;
-    top: 28.2%;
+    top:-220px;
     left: 50.6%;
 }
 
