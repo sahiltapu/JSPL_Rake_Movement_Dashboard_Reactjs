@@ -54,3 +54,27 @@
     margin-top: 2px;
     margin-bottom: 2px;
 }
+.New_Movement_Select_option,.Loaded_type_New_Movement_Button{
+    width:99%;
+    height: 25px;
+    border: none;
+}
+.New_Movement_Select_option:focus,
+.Loaded_type_New_Movement_Button:focus{
+    border: none;
+    outline: none;
+}
+.Create_rake_id_button{
+    border:none;
+    margin-top: 20px;
+    width: 150px;
+    height:30px;
+    color: white;
+    opacity: 0.6;
+    background: rgb(161, 111, 2);
+    font-size: 14px;
+
+}
+.Create_rake_id_button:hover{
+    opacity: 1;
+}
