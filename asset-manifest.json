@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/JSPL_Rake_Movement_Dashboard_Reactjs/static/css/main.1694d60b.css",
+    "main.js": "/JSPL_Rake_Movement_Dashboard_Reactjs/static/js/main.cb71245d.js",
+    "static/media/graf-bg.gif": "/JSPL_Rake_Movement_Dashboard_Reactjs/static/media/graf-bg.bf08d52359d966f979a0.gif",
+    "static/media/graf-bg_out.gif": "/JSPL_Rake_Movement_Dashboard_Reactjs/static/media/graf-bg_out.63524bd91a0a79e0f6bf.gif",
+    "static/media/jspl_logo.png": "/JSPL_Rake_Movement_Dashboard_Reactjs/static/media/jspl_logo.51d71b1b10b804149835.png",
+    "index.html": "/JSPL_Rake_Movement_Dashboard_Reactjs/index.html",
+    "main.1694d60b.css.map": "/JSPL_Rake_Movement_Dashboard_Reactjs/static/css/main.1694d60b.css.map",
+    "main.cb71245d.js.map": "/JSPL_Rake_Movement_Dashboard_Reactjs/static/js/main.cb71245d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1694d60b.css",
+    "static/js/main.cb71245d.js"
+  ]
+}
